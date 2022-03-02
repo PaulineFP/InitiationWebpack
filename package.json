@@ -1,0 +1,22 @@
+{
+  "name": "exo_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2",
+    "webpack-config": "^7.5.0"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.0"
+  }
+}
