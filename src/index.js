@@ -1,9 +1,10 @@
 import '../assets/stylesheets/style.css';
 
-document.write("Je débute avec Webpack !");
+import axios from "axios";
 
-const heading = document.createElement('h1')
-heading.textContent = ' !'
+axios // prend en charge les navigateur plus encien 
+.get("https://jsonplaceholder.typicode.com/posts")
+.then((resp) => console.log(resp));
 
 //    DOM
 const root = document.querySelector('#root')

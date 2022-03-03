@@ -24,11 +24,11 @@ module.exports = {
   devServer: {
    // static: {path.join(__dirname, './public')},
    static: "./public",
-   compress: true,// active la compression gzip
-   open: true,
-   historyApiFallback: true, // true pour index.html sur 404, objet pour plusieurs chemins
-   hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
-   https: false,
+   //compress: true,// active la compression gzip
+  // open: true,
+  // historyApiFallback: true, // true pour index.html sur 404, objet pour plusieurs chemins
+   // hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
+   // https: false,
    port: 3000,
  },
  //charger le css avec css-loader
