@@ -20,6 +20,9 @@ module.exports = {
     publicPath: "/asset/", //'url vers le répertoire de sortie résolue par rapport à la page HTML
     filename: "[name].bundle.js",// le modèle de nom de fichier pour les morceaux d'entrée
   },
+  externals: {
+    "react": 'React',
+  },
   mode: 'development',
   devServer: {
    // static: {path.join(__dirname, './public')},
