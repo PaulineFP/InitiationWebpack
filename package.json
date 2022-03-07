@@ -4,10 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "watch": "webpack --watch",
     "start": "npm-run-all -l -p start:**",
+    "start:watch": "webpack --watch",
     "start:serv": "webpack serve",
-    "start:taiwincss": "npx tailwindcss -i ./assets/stylesheets/style.css -o ./public/output.css --watch",
+    "start:tailwindcss": "npx tailwindcss -i ./assets/stylesheets/style.css -o ./public/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

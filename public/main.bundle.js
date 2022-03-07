@@ -326,6 +326,39 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 
 /***/ }),
 
+/***/ "./src/components/MenuItems.js":
+/*!*************************************!*\
+  !*** ./src/components/MenuItems.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"MenuItems\": () => (/* binding */ MenuItems)\n/* harmony export */ });\nvar MenuItems = [{\n  title: 'Home',\n  url: '#',\n  cName: 'nav-links'\n}, {\n  title: 'Page2',\n  url: '#',\n  cName: 'nav-links'\n}, {\n  title: 'Page3',\n  url: '#',\n  cName: 'nav-links'\n}];\n\n//# sourceURL=webpack://exo_webpack/./src/components/MenuItems.js?");
+
+/***/ }),
+
+/***/ "./src/components/Navbar.js":
+/*!**********************************!*\
+  !*** ./src/components/Navbar.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Navbar\": () => (/* binding */ Navbar)\n/* harmony export */ });\n/* harmony import */ var _MenuItems__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MenuItems */ \"./src/components/MenuItems.js\");\n // let Menuitems = {\n//   [\n//     'title'= 'Home',\n//     'url'= '#',\n//     'cName'= 'nav-links'\n//   ],\n//   [\n//     'title': 'Page2',\n//     'url': '#',\n//     'cName': 'nav-links'\n//   ],\n//   [\n//     'title': 'Page3',\n//     'url': '#',\n//     'cName': 'nav-links'\n//   ]\n// }\n\nvar Navbar = function Navbar() {\n  return (\n    /*#__PURE__*/\n    //<>\n    React.createElement(\"h1\", null, \"sss\") //<div className='pkcamarchepas'>\n    // <div classN='navMenu'>\n    //    <ul>\n    //      // <li>\n    //      //   {Menuitems.title[0]}\n    //      // </li>\n    //      // <li>\n    //      //   {Menuitems.title[1]}\n    //      // </li>\n    //      // <li>\n    //      //   {Menuitems.title[2]}\n    //      // </li>\n    //    //------Méthide map---------//\n    //     {MenuItems.map((item, index) => {\n    //       return (\n    //         <li key={index}>\n    //           <a className={item.cName} href={item.url}>\n    //             {item.Title}\n    //           </a>\n    //         </li>\n    //       );\n    //     })}\n    //    </ul>\n    // </div>\n    //</div>\n    // </>\n\n  );\n};\n\n//# sourceURL=webpack://exo_webpack/./src/components/Navbar.js?");
+
+/***/ }),
+
+/***/ "./src/components/foo.js":
+/*!*******************************!*\
+  !*** ./src/components/foo.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar arrayObject = [{\n  _id: 0,\n  name: 'adedd'\n}, {\n  _id: 1,\n  name: 'azertyu'\n}, {\n  _id: 2,\n  name: 'nbvcx'\n}];\nvar objOfObj = {\n  3: {\n    _id: 3,\n    name: 'dfghjkl'\n  },\n  4: {\n    _id: 4,\n    name: 'sdxfcgvhjk'\n  },\n  5: {\n    _id: 9,\n    name: 'tryuiop'\n  }\n};\n\nvar Foo = function Foo() {\n  var root = document.querySelector('#root');\n  var h1 = document.createElement('h1');\n  h1.innerHTML = \"Fooooooooo\";\n  var br = document.createElement('br');\n  var arrayObj = arrayObject.map(function (value) {\n    return value._id + value.name;\n  }); //appeler l'object et cibler la valeur\n\n  var oBj = objOfObj[3]._id + objOfObj[3].name;\n  root.append(h1, arrayObj, br, oBj);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Foo);\n\n//# sourceURL=webpack://exo_webpack/./src/components/foo.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -333,7 +366,7 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/stylesheets/style.css */ \"./assets/stylesheets/style.css\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);\n\n\naxios__WEBPACK_IMPORTED_MODULE_1___default().get(\"https://jsonplaceholder.typicode.com/posts\").then(resp => console.log(resp)); //-----------Création d'une navbar avec insertion html full js--------------//\n\nconst createDiv = document.createElement('div');\nconsole.log(createDiv); //sélectionne la balise body et actionne la variable createDiv\n\ndocument.querySelector('body').appendChild(createDiv); //ajoute lui la class '...'\n\ncreateDiv.className = 'bg-gray-400 text-black p-8 h-5';\nconsole.log(createDiv.outerHTML); //--------------------------------------------------------------------------//\n//    DOM\n\nconst root = document.querySelector('#root');\nroot.append(heading);\n\n//# sourceURL=webpack://exo_webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var _assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/stylesheets/style.css */ \"./assets/stylesheets/style.css\");\n/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Navbar */ \"./src/components/Navbar.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_foo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/foo */ \"./src/components/foo.js\");\n\n\n\n //-----------Création d'une navbar avec insertion html full js--------------//\n\nfunction App() {\n  axios__WEBPACK_IMPORTED_MODULE_2___default().get(\"https://jsonplaceholder.typicode.com/posts\") //Exo: crée un nouveau dossier avec dedans un petit composent qui prendrait en paramettre un environment (.env)\n  //Au lieu de mettre en dure pour avoir juste le nom de ma variable pour pas que se soit recup\n  .then(function (resp) {\n    return console.log(resp);\n  }); //point d entré du DOM\n\n  var root = document.querySelector('#root');\n  var h1 = document.createElement('h1');\n  h1.innerHTML = \"Hello App\"; //inserer du contenue à la suite du selecteur (div)\n\n  root.append(h1);\n  (0,_components_foo__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n}\nApp(); //                   \\   ^__^\n//                    \\  (oo)\\_______\n//                       (__)\\       )\\/\\\n//                           ||---- |\n//                         ||    ||\n\n//# sourceURL=webpack://exo_webpack/./src/index.js?");
 
 /***/ }),
 
